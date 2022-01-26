@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(146, 169, 212);
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 0px;
 }
 .first{
@@ -17,9 +17,10 @@ body{
     padding-right: 20px;
     font-weight: bolder;
 }
+
 .second{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .second .first-part{
     width: 382px;
@@ -29,9 +30,9 @@ body{
 .second-part img{
     width: 340px;
     height: 274px;
-    margin-left: 150px;
-    padding-right: 30px;
-}
+     margin-left: 100px;
+    padding-right: 30px; 
+} 
 .button{
     width: 196px;
     height: 44px;
@@ -41,6 +42,171 @@ body{
     font-weight: 500;
     padding:10px 20px;
     border-radius: 41px;
+}
+.middle{
+margin-bottom: 20px;
+}
+.caption{
+    margin-top: 10px;
+    text-align: center;
+}
+.product{
+    width: 320px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+.products{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.product-banner img{
+    width:300px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.product-description{
+    margin: 15px;
+}
+.fa-star{
+    font-size: 12px;
+ }
+ .fa-star.filled{
+     color: #FFC014;
+ }
+ .fa-star.empty{
+     color:  #AEAEAE;
+     /* opacity: 0.25; */
+ }
+.final-sec{
+    margin-bottom: 20px;
+    display: flex;
+}
+.finalimg{
+    margin-left: 150px;
+}
+.finaltext{
+    margin-left: 20px;
+}
+
+footer{
+    background-color:rgb(13, 29, 252);
+    width: 100%;
+    height: max-content;
+}
+.final{
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fab{
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 668px){
+  
+    .first{
+        justify-content: space-evenly;
+    } 
+    .nav1{
+        justify-content: center;
+    }
+    .nav2 .hidden{
+        display: none;
+    }
+    .first a{
+        padding-right: 5px;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+    }
+    .second .first-part{
+        width: 299px;
+        height: 270px;
+       margin: 0px;
+       padding-left: 10px;
+       text-align: center;
+    }
+    .second-part img{
+        margin-top: 10px;
+        width: 240px;
+        height: 274px; 
+        justify-items: center;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .final{
+        width: 100%;
+    }
+    .final-sec{
+        flex-direction: column;
+    }
+    .finalimg{
+        margin-left: 30px;
+    }
+}
+    
+@media only screen and (max-width:992px) {
+    .first{
+        justify-content: space-evenly;
+    } 
+    .nav1{
+        justify-content: center;
+    }
+    
+    .first a{
+        padding-right: 5px;
+    }
+    .second{
+        flex-direction: column;
+        align-items: center;
+    }
+    .second .first-part{
+        width: 299px;
+        height: 270px;
+       margin: 0px;
+       padding-left: 10px;
+       text-align: center;
+    }
+    .second-part img{
+        margin-top: 10px;
+        width: 240px;
+        height: 274px; 
+        margin-left: 40px;
+        padding: 0px;
+        left: 51px;
+    }
+    .products{   
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .final-sec{
+        flex-direction: column;
+        align-items: center;
+    }
+    .finalimg{
+        margin-left: 30px;
+    }
+    .finaltext{
+        text-align: center;
+    }
 }
 
 
